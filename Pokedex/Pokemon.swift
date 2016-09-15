@@ -168,12 +168,6 @@ class Pokemon {
                         self._defense="\(defense)"
                     }
                     
-                    print(self._weight)
-                    print(self._height)
-                    print(self._defense)
-                    print(self._attack)
-                    
-                    
                     
                     
                     //////type'ların parse edilmesi, yerleşdirilmesi

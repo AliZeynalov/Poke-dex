@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pokedex
 //
-//  Created by Caner Karinca on 14/09/16.
+//  Created by Ali Zeynalov on 02/09/16.
 //  Copyright © 2016 Ali Zeynalov. All rights reserved.
 //
 

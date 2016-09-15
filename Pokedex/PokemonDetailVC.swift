@@ -24,53 +24,71 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var weightLbl: UILabel!
     @IBOutlet weak var baseAttack: UILabel!
     
+    
+    
     var pokemon: Pokemon!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLbl.text = pokemon.name
-        let img = UIImage(named: "\(pokemon.pokedexId)")
-        mainImg.image = img
-        currentEvoImg.image = img
+        mainImg.image=UIImage(named: "\(pokemon.pokedexId)")
+        currentEvoImg.image=UIImage(named: "\(pokemon.pokedexId)")
         
-        pokemon.downloadPokemonDetails { () -> () in
-            //this will be called after download is done
+        pokemon.downloadPokemonDetails { 
+            // Download bittiginde fonksiyon calistirilacaktir
             self.updateUI()
+            bitti = true
         }
-    }
+        }
     
-    func updateUI() {
-        descriptionLbl.text = pokemon.description
-        typeLbl.text = pokemon.type
-        defenseLbl.text = pokemon.defense
-        heightLbl.text = pokemon.height
-        pokedexLbl.text = "\(pokemon.pokedexId)"
-        weightLbl.text = pokemon.weight
-        baseAttack.text = pokemon.attack
-        
-        if pokemon.nextEvolutionId == "" {
-            evoLbl.text = "No Evolutions"
-            nextEvoImg.hidden = true
-        } else {
-            nextEvoImg.hidden = false
-            nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
+    
+    func updateUI()
+    {
+        descriptionLbl.text=pokemon.description
+        typeLbl.text=pokemon.type
+        defenseLbl.text=pokemon.defense
+        heightLbl.text=pokemon.height
+        pokedexLbl.text="\(pokemon.pokedexId)"
+        weightLbl.text=pokemon.weight
+        baseAttack.text=pokemon.attack
+        if pokemon.nextEvolutionId == ""
+        {
+            evoLbl.text="No Evolutions"
+            nextEvoImg.hidden=true
+        }
+        else
+        {
+            nextEvoImg.hidden=false
+            nextEvoImg.image=UIImage(named: pokemon.nextEvolutionId)
             var str = "Next Evolution: \(pokemon.nextEvolutionTxt)"
             
-            if pokemon.nextEvolutionLvl != "" {
+            if pokemon.nextEvolutionLvl != ""
+            {
                 str += " - LVL \(pokemon.nextEvolutionLvl)"
+                evoLbl.text=str
             }
+        }
+        
+        
+    }
+    
+
+    @IBAction func BackButtonPressed(sender: AnyObject) {
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    @IBAction func backBtnPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+
+    
+
+
+
+
+
+    
+
     
     
-}
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c8N-K9-NMT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,7 +7,6 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
@@ -25,6 +24,7 @@
             <string>HelveticaNeue-Italic</string>
         </mutableArray>
         <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
             <string>PokemonSolidNormal</string>
         </mutableArray>
     </customFonts>
@@ -69,7 +69,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Lxi-M8-SOQ" firstAttribute="centerX" secondItem="TcK-zf-Gyz" secondAttribute="centerX" id="2Ft-3A-pAh"/>
                                     <constraint firstItem="Lxi-M8-SOQ" firstAttribute="centerY" secondItem="TcK-zf-Gyz" secondAttribute="centerY" id="4Xc-qH-r8B"/>
@@ -83,7 +83,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dbQ-0e-9uZ">
-                                <rect key="frame" x="20" y="116" width="560" height="464"/>
+                                <rect key="frame" x="22" y="116" width="560" height="464"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gbf-Pz-rEN">
                                     <size key="itemSize" width="110" height="110"/>
@@ -190,7 +190,7 @@
                                             <constraint firstAttribute="height" constant="21" id="hE7-ye-RlW"/>
                                             <constraint firstAttribute="height" constant="30" id="heg-oc-Ycq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -208,11 +208,12 @@
                                         </constraints>
                                         <state key="normal" image="back"/>
                                         <connections>
+                                            <action selector="BackButtonPressed:" destination="Px5-iT-8DF" eventType="touchUpInside" id="rjq-KJ-w1k"/>
                                             <action selector="backBtnPressed:" destination="Px5-iT-8DF" eventType="touchUpInside" id="Bzn-x2-2yf"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ljJ-zn-7tb" firstAttribute="centerX" secondItem="CKi-Fu-E9z" secondAttribute="centerX" id="Stu-fe-4rv"/>
                                     <constraint firstItem="d3D-n7-2rK" firstAttribute="leading" secondItem="CKi-Fu-E9z" secondAttribute="leading" constant="8" id="VZI-Rx-kD7"/>

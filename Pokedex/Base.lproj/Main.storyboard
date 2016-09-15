@@ -69,7 +69,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.67390992689999996" blue="0.14808168969999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Lxi-M8-SOQ" firstAttribute="centerX" secondItem="TcK-zf-Gyz" secondAttribute="centerX" id="2Ft-3A-pAh"/>
                                     <constraint firstItem="Lxi-M8-SOQ" firstAttribute="centerY" secondItem="TcK-zf-Gyz" secondAttribute="centerY" id="4Xc-qH-r8B"/>
@@ -182,7 +182,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-Fu-E9z">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-zn-7tb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulbasour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-zn-7tb">
                                         <rect key="frame" x="177" y="13" width="247" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="247" id="cSf-eB-6kw"/>
@@ -213,7 +213,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.67390992689999996" blue="0.14808168969999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ljJ-zn-7tb" firstAttribute="centerX" secondItem="CKi-Fu-E9z" secondAttribute="centerX" id="Stu-fe-4rv"/>
                                     <constraint firstItem="d3D-n7-2rK" firstAttribute="leading" secondItem="CKi-Fu-E9z" secondAttribute="leading" constant="8" id="VZI-Rx-kD7"/>

@@ -125,6 +125,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return CGSizeMake(105, 105)
     }
     
+    
+    ////muzik iconu tiklandiginda
     @IBAction func musicBtnPressed(sender: UIButton!) {
         
         if musicPlayer.playing {
@@ -161,7 +163,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if segue.identifier == "PokemonDetailVC" {
             if let detailsVC = segue.destinationViewController as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
-                    detailsVC.pokemon = poke
+                    detailsVC.pokemon = poke   ///PokemonDetailVCde ViewDidLoad'dan once Pokemon objesi hazir olacaktir
                 }
             }
         }

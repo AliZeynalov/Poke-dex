@@ -38,7 +38,6 @@ class PokemonDetailVC: UIViewController {
         pokemon.downloadPokemonDetails { 
             // Download bittiginde fonksiyon calistirilacaktir
             self.updateUI()
-            bitti = true
         }
         }
     
@@ -52,6 +51,8 @@ class PokemonDetailVC: UIViewController {
         pokedexLbl.text="\(pokemon.pokedexId)"
         weightLbl.text=pokemon.weight
         baseAttack.text=pokemon.attack
+        
+        ///pokemon evolve etmiyorsa
         if pokemon.nextEvolutionId == ""
         {
             evoLbl.text="No Evolutions"
@@ -75,7 +76,8 @@ class PokemonDetailVC: UIViewController {
     
 
     @IBAction func BackButtonPressed(sender: AnyObject) {
-            dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
         }
     }
     
